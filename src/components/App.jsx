@@ -1,5 +1,3 @@
-//import "./App.css";
-import Header from "./Header";
 import FunctionalComponent from "./FunctionalComponent";
 import FunctionalComponent1 from "./FunctionalComponent1";
 import ClassComponent from "./ClassComponent";
@@ -23,9 +21,6 @@ function App() {
 
   return (
     <>
-      <div className="bg-primary card">
-        <Header />
-      </div>
       <div>
         {/* Component funcional que comunica amb el component fill */}
         <FunctionalComponent
