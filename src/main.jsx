@@ -6,6 +6,7 @@ import App from "./components/App.jsx";
 import Header from "./components/Header.jsx";
 import Rutes from "./components/Rutes.jsx";
 import Refugis from "./components/Refugis.jsx";
+import Contacta from "./components/Contacta.jsx";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -34,6 +35,13 @@ ReactDOM.createRoot(document.getElementById("root")).render(
               Rutes
             </a>
           </li>
+
+          <li className="nav-item">
+          <a href="/contacta" className="nav-link">
+            Contacta
+          </a>
+        </li>
+
         </ul>
       </nav>
     </div>
@@ -44,6 +52,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route path="/refugis" element={<Refugis />}>
           <Route path=":id" element={<Refugis />} />
         </Route>
+        <Route path="/contacta" element={<Contacta />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
